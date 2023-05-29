@@ -13,13 +13,24 @@ import com.example.mysololife.R
 class ContentRVAdapter(val context : Context, val items : ArrayList<ContentModel>) :
     RecyclerView.Adapter<ContentRVAdapter.Viewholder>() {
 
+    interface ItemClick {
+        fun onClick(view : View, position: Int)
+    }
+    var itemClick : ItemClick? = null
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Viewholder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.content_rv_item, parent, false)
         return Viewholder(v)
     }
 
     override fun onBindViewHolder(holder: ContentRVAdapter.Viewholder, position: Int) {
-        holder.bindItems(items[position])
+        holder.bindItems(items[position]) // 이거 사라지니까 이미지, 제목 제대로 안 뜸
+        if(itemClick != null) {
+            holder.itemView.setOnClickListener { v->
+                itemClick?.onClick(v, position)
+            }
+        }
+
     }
 
     override fun getItemCount(): Int {
