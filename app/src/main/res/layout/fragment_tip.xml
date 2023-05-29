@@ -15,6 +15,85 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="70dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:id="@+id/cartegory1"
+                        android:src="@drawable/main_icon_all"
+                        android:layout_weight="1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <ImageView
+                        android:src="@drawable/main_icon_cook"
+                        android:layout_weight="1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <ImageView
+                        android:src="@drawable/main_icon_economy"
+                        android:layout_weight="1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:src="@drawable/main_icon_else"
+                        android:layout_weight="1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <ImageView
+                        android:src="@drawable/main_icon_hobby"
+                        android:layout_weight="1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <ImageView
+                        android:src="@drawable/main_icon_interior"
+                        android:layout_weight="1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:src="@drawable/main_icon_life"
+                        android:layout_weight="1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <ImageView
+                        android:src="@drawable/main_icon_oneroom"
+                        android:layout_weight="1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="3dp"
                 app:layout_constraintBottom_toTopOf="@+id/linearLayout">
 
